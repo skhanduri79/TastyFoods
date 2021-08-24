@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgm3"
+    tools:context=".activity.RegisterActivity">
+
+    <ImageView
+        android:id="@+id/imgAppLogo"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/tastyfoods_app_icon_edited"/>
+
+    <TextView
+        android:id="@+id/txtEnterDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgAppLogo"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="40dp"
+        android:text="Enter the details to register yourself: "
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtEnterDetails"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:hint="Name"
+        android:textSize="15sp"
+        android:drawableLeft="@drawable/ic_name"
+        android:padding="15sp"
+        android:inputType="text" />
+    <EditText
+        android:id="@+id/etMobileNo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etName"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:hint="Mobile No"
+        android:padding="15sp"
+        android:textSize="15sp"
+        android:drawableLeft="@drawable/ic_mobile"
+        android:inputType="number"
+        android:maxLength="10"/>
+    <EditText
+        android:id="@+id/etEmailAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etMobileNo"
+        android:layout_marginTop="20dp"
+        android:padding="15sp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:hint="Email Address"
+        android:textSize="15sp"
+        android:drawableLeft="@drawable/ic_email"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/etDeliveryAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etEmailAdd"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:padding="15sp"
+        android:layout_marginLeft="20dp"
+        android:hint="Delivery address"
+        android:textSize="15sp"
+        android:drawableLeft="@drawable/ic_address"
+        android:inputType="textPostalAddress" />
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SUBMIT"
+        android:textSize="18sp"
+        android:padding="15sp"
+        android:textStyle="bold"
+        android:layout_below="@id/etDeliveryAdd"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="#B71C1C"
+        android:textColor="#ffffff"/>
+
+
+
+</RelativeLayout>
